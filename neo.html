@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Haven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1604011554851-237bb7be2ef2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGJlYXV0eSUyMHBhZ2V8ZW58MHx8fHwxNjg0MjI1NjQ2&ixlib=rb-4.0.3&q=80&w=1920');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #d5006d;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px;
+            animation: fadeIn 1.5s;
+        }
+
+        .hero h1 {
+            color: #d5006d;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .hero p {
+            color: #555;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .button {
+            background-color: #d5006d;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px #e0e0e0, -4px -4px 10px #ffffff;
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            box-shadow: inset 4px 4px 10px #e0e0e0, inset -4px -4px 10px #ffffff;
+            transform: translateY(2px);
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+            margin: 0 15px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            color: #d5006d;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            margin-top: auto;
+        }
+
+        footer p {
+            color: #555;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Beauty Haven</div>
+        <div>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Beauty Haven</h1>
+        <p>Your go-to place for beauty treatments and products.</p>
+        <button class="button">Get Started</button>
+    </div>
+
+    <div class="services" id="services">
+        <div class="service-card">
+            <h3>Facials</h3>
+            <p>Revitalize your skin with our luxurious facials.</p>
+        </div>
+        <div class="service-card">
+            <h3>Makeup</h3>
+            <p>Expert makeup services for all occasions.</p>
+        </div>
+        <div class="service-card">
+            <h3>Massage</h3>
+            <p>Relax and unwind with our soothing massages.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Beauty Haven. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+            alert('Welcome to Beauty Haven!');
+        });
+    </script>
+</body>
+</html>
